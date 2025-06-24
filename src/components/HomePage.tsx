@@ -221,17 +221,36 @@ export function HomePage() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
+         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            {/* Logo & Name */}
+            <div className="flex items-center space-x-2">
               <Brain className="h-8 w-8 text-purple-400" />
               <span className="font-bold text-xl">VoiceScholar</span>
             </div>
-            <div className="text-gray-400 text-center md:text-right">
+
+            {/* Copyright */}
+            <div className="text-gray-400 text-sm text-center md:text-right">
               <p>&copy; 2025 VoiceScholar. Empowering students worldwide.</p>
+            </div>
+
+            {/* Extras: Built on Bolt + Signature */}
+            <div className="flex flex-col items-center md:items-end space-y-2 text-sm text-gray-300">
+              <a
+                href="https://bolt.new"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-[#5C4DFF] text-white px-4 py-1.5 rounded-full font-semibold hover:opacity-90 transition"
+              >
+                🚀 Built on Bolt
+              </a>
+              <p className="text-gray-400">
+                MADE WITH <span className="text-red-500">❤️</span> BY <span className="font-semibold">SAMYA ALI</span>
+              </p>
             </div>
           </div>
         </div>
       </footer>
+
 
       <AuthModal isOpen={showAuthModal} onClose={() => setShowAuthModal(false)} />
     </div>
