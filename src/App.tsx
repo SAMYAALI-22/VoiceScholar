@@ -56,21 +56,6 @@ function App() {
             <main className="flex-grow">
               <AppContent />
             </main>
-
-            {/* Footer with badge and credit */}
-            <footer className="w-full text-center py-4 border-t bg-white dark:bg-gray-800">
-              <a
-                href="https://bolt.new/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-semibold hover:bg-indigo-700 transition duration-300"
-              >
-                🚀 Built on Bolt
-              </a>
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-                MADE WITH <span className="text-red-500">❤</span> BY SAMYA ALI
-              </p>
-            </footer>
           </div>
         </Router>
       </AuthProvider>
